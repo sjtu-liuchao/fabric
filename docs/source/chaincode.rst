@@ -6,9 +6,13 @@ languages such as Go or Java. It is installed and instantiated through
 an SDK or CLI onto a network of Hyperledger Fabric peer nodes, enabling
 interaction with that network's shared ledger.
 
-There are three aspects to chaincode development: \* The interfaces that
-the chaincode should implement \* APIs the chaincode can use to interact
-with the Fabric \* A chaincode response
+There are three aspects to chaincode development: 
+
+- The interfaces that the chaincode should implement 
+
+- APIs the chaincode can use to interact with the Fabric 
+
+- A chaincode response
 
 Chaincode interfaces
 --------------------
@@ -35,11 +39,13 @@ Dependencies
 ------------
 
 The import statement lists a few dependencies for the chaincode to
-compile successfully. \* fmt – contains Println for debugging/logging.
-\* errors – standard go error format. \*
-`shim <https://github.com/hyperledger/fabric/tree/master/core/chaincode/shim>`__
-– contains the definitions for the chaincode interface and the chaincode
-stub, which you are required to interact with the ledger.
+compile successfully. 
+
+- fmt – contains Println for debugging/logging.
+
+- errors – standard go error format. 
+
+- `shim <https://github.com/hyperledger/fabric/tree/master/core/chaincode/shim>`__– contains the definitions for the chaincode interface and the chaincode stub, which you are required to interact with the ledger.
 
 Chaincode APIs
 --------------
